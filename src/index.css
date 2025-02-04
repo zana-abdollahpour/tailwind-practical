@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply flex justify-center bg-gradient-to-r from-[#a08e70] to-[#413a2d] p-6 text-gray-50 xl:p-12;
+  }
+
+  img {
+    @apply h-full max-w-full rounded-md object-cover grayscale sepia transition-all duration-700;
+
+    &:hover {
+      @apply grayscale-0 sepia-0;
+    }
+  }
+}
