@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply flex justify-center p-6 xl:p-12;
+  }
+
+  img {
+    @apply h-full max-w-full rounded object-cover grayscale transition;
+
+    &:hover {
+      @apply grayscale-0;
+    }
+  }
+}
